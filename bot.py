@@ -17,7 +17,7 @@ def hmtimeshome(m):
 @bot.message_handler(commands=['start']) #Первое сообщение
 def startuem(message):
   """
-  Это сообщение отвечает за начала общения пользователя с ботом
+  Функция для обработки команды start
   """
     global users
     kb = telebot.types.ReplyKeyboardMarkup(True, False)
@@ -196,3 +196,6 @@ def doma(message):
 
 
 bot.polling(none_stop=True)
+""" 
+Бот постоянно спрашивает сервера телеграмм на наличие новых сообщений
+"""
